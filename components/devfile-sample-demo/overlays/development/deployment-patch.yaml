@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-demo
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/ysubrama-tenant/devfile-sample/devfile-sample-demo@sha256:93bf98aebf814fbd64a890e37052f24fad7f74a6d94d3bb2203112cedd7ad0e2
+        name: my-nodejs
+        resources: {}
+status: {}
